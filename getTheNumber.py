@@ -1,6 +1,6 @@
 import random
 
-tries = 6
+tries = 5
 jokers = 1
 
 regel = '''In diesem Spiel geht es darum, die geheime Zahl des Computers zu erraten. 
@@ -49,7 +49,7 @@ while tries > 0:
                 else:
                     print("\033[37mDie geheime Zahl ist eine ungerade Zahl\033[0m")
         if tries == 0:
-            print(f"\033[96m Sie haben leider kein Versuch mehr und die geheime Zahl war: {mistery_number} \033[0m")
+            print(f"\033[96mSie haben leider kein Versuch mehr und die geheime Zahl war: {mistery_number} \033[0m")
     except ValueError:
         print("\033[91m Fehler: Bitte geben Sie eine gültige Zahl ein.\033[0m")
 
